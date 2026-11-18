@@ -65,7 +65,7 @@ Bump `version` in `extension/manifest.json` (and `package.json`), commit, then p
 git tag v1.0.1 && git push origin v1.0.1
 ```
 
-The release workflow builds the zip and attaches it to a GitHub release.
+The release workflow builds the zip and attaches it to a GitHub release. You can also skip the tag and click **Run workflow** on the Release workflow in the Actions tab, which tags the current `main` with the manifest version.
 
 ## Contributing
 
