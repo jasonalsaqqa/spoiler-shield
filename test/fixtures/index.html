@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Gaming news</title>
+<script>window.dataLayer=[];function gtag(){dataLayer.push(arguments)}gtag('js', new Date());</script>
+<style>.card{border:1px solid #ccc;margin:8px;padding:8px;width:300px;display:inline-block;vertical-align:top}.card img{width:100%;height:120px;background:#468}</style></head>
+<body>
+<h1>Today in games</h1>
+<nav><ul><li id="nav1">Home</li><li id="nav2">GTA 6 hub</li><li id="nav3">Reviews</li></ul></nav>
+<div id="grid">
+  <div class="card" id="c1"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><h3>GTA 6 ending explained</h3><p>by someone</p></div>
+  <div class="card" id="c2"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><h3>Zelda patch notes</h3><p>by someone</p></div>
+  <div class="card" id="c3"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Leonida map screenshot"><h3>Look at this map</h3></div>
+  <div class="card" id="c4"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><h3>New GTA6 trailer breakdown</h3></div>
+  <div class="card" id="c5"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><h3>Why <b>Grand Theft</b> Auto still rules</h3></div>
+</div>
+<article id="art">
+  <p id="p1">This is a long article paragraph about many games. Some people are waiting for things. It keeps going for a while with filler text so it is longer than three hundred characters, which means the climbing logic should stop at this paragraph and not swallow the whole article container. More filler, more filler, more filler text here. And Lucia Caminos does something.</p>
+  <p id="p2">Totally safe paragraph about Elden Ring and Hollow Knight with enough text to be its own block of content here, nothing to see. Filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler.</p>
+</article>
+<ol><li id="t1">#GTA6<small style="display:block">48K posts</small></li><li id="t2">Leo<mark>nida</mark> tour</li><li id="t3">Game awards<small>21K posts</small></li></ol>
+<p id="fp1">The regatta this weekend, gtag analytics, GTAs and togtavgang should not match.</p>
+<p id="fp2">I bought a Rockstar energy drink.</p>
+<input id="search" value="gta 6 release">
+<ul id="feed"></ul>
+<script>
+setTimeout(() => {
+  const feed = document.getElementById('feed');
+  for (const [id, t] of [['d1','Breaking: Jason Duval twist'],['d2','Cat video'],['d3','vice-city skyline leak']]) {
+    const li = document.createElement('li'); li.id = id; li.textContent = t; feed.appendChild(li);
+  }
+  // recycled element: blurred card gets harmless content
+  document.querySelector('#c4 h3').textContent = 'Stardew Valley tips';
+  // revealed-safe card gets spoiler content later
+  document.querySelector('#c2 h3').textContent = 'GTA VI final mission';
+  window.__mutated = true;
+}, 800);
+</script>
+</body></html>

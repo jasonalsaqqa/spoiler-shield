@@ -1,0 +1,43 @@
+name: Site problem
+description: A spoiler got through, or too much of a page got blurred
+labels: [site-support]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please only share the site's domain and a public example URL.
+        Don't paste links to private pages, inboxes or anything with personal info in it.
+  - type: input
+    id: site
+    attributes:
+      label: Site
+      placeholder: youtube.com
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What happened?
+      options:
+        - A spoiler was not blurred
+        - Too much of the page was blurred
+        - Something unrelated was blurred
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: keyword
+    attributes:
+      label: Keyword involved
+      placeholder: gta 6
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Where on the page it happened (feed, comments, sidebar, search). A screenshot helps a lot.
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: Shown on chrome://extensions
+      placeholder: 1.0.0

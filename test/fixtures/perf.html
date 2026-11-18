@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><title>perf</title></head><body><ul id="l"></ul>
+<script>
+window.runPerf = async () => {
+  const l = document.getElementById('l');
+  const t0 = performance.now();
+  for (let b = 0; b < 50; b++) {
+    const frag = document.createDocumentFragment();
+    for (let i = 0; i < 100; i++) {
+      const li = document.createElement('li');
+      const n = b * 100 + i;
+      li.innerHTML = `<div class="card"><span>Item ${n}</span> <a href="#">${n % 100 === 0 ? 'GTA 6 leak' : 'some normal headline about stuff number ' + n}</a><p>description text for this item which is fairly ordinary</p></div>`;
+      frag.appendChild(li);
+    }
+    l.appendChild(frag);
+    await new Promise(r => setTimeout(r, 0));
+  }
+  return { ms: Math.round(performance.now() - t0), hidden: document.querySelectorAll('[data-ssb]').length };
+};
+</script></body></html>

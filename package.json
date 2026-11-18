@@ -1,0 +1,15 @@
+{
+  "name": "spoiler-shield",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension that blurs anything mentioning your keywords. Ships with a GTA 6 list.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node test/e2e.mjs",
+    "package": "bash scripts/package.sh"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

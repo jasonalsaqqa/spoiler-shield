@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pixel Daily</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; background: #f4f4f7; color: #16161d; }
+  header { background: #16161d; color: #fff; padding: 18px 40px; display: flex; align-items: center; gap: 28px; }
+  header b { font-size: 20px; letter-spacing: -.3px; }
+  header span { color: #a6a6b4; font-size: 14px; }
+  main { display: grid; grid-template-columns: 1fr 280px; gap: 28px; padding: 28px 40px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  article { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .thumb { height: 128px; }
+  article h3 { margin: 12px 14px 4px; font-size: 16px; line-height: 1.3; }
+  article p { margin: 0 14px 14px; color: #74747f; font-size: 13px; }
+  aside { background: #fff; border-radius: 12px; padding: 16px 18px; box-shadow: 0 1px 3px rgba(0,0,0,.08); align-self: start; }
+  aside h4 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: .6px; color: #74747f; }
+  aside ol { margin: 0; padding-left: 20px; }
+  aside li { padding: 7px 0; font-weight: 600; }
+  @media (max-width: 1000px) { main { grid-template-columns: 1fr 230px; padding: 24px 28px; } .grid { grid-template-columns: repeat(2, 1fr); } header { padding: 18px 28px; } }
+  aside li small { display: block; font-weight: 400; color: #8a8a96; }
+</style>
+</head>
+<body>
+  <header><b>Pixel Daily</b><span>News</span><span>Reviews</span><span>Guides</span><span>Videos</span></header>
+  <main>
+    <div class="grid">
+      <article><div class="thumb" style="background:linear-gradient(135deg,#ff5f6d,#ffc371)"></div><h3>GTA 6 ending explained: every choice that matters</h3><p>Guides · 12 min read</p></article>
+      <article><div class="thumb" style="background:linear-gradient(135deg,#43cea2,#185a9d)"></div><h3>The best cozy games to play this winter</h3><p>Lists · 6 min read</p></article>
+      <article><div class="thumb" style="background:linear-gradient(135deg,#f7971e,#ffd200)"></div><h3>Leonida map fully revealed in new leak</h3><p>News · 3 min read</p></article>
+      <article><div class="thumb" style="background:linear-gradient(135deg,#8e2de2,#4a00e0)"></div><h3>Indie roguelike hits one million players</h3><p>News · 2 min read</p></article>
+      <article><div class="thumb" style="background:linear-gradient(135deg,#ee0979,#ff6a00)"></div><h3>Grand Theft Auto VI: the twist nobody saw coming</h3><p>Opinion · 8 min read</p></article>
+      <article><div class="thumb" style="background:linear-gradient(135deg,#00b09b,#96c93d)"></div><h3>Ten years of a cult classic, revisited</h3><p>Features · 10 min read</p></article>
+    </div>
+    <aside>
+      <h4>Trending</h4>
+      <ol>
+        <li>#GTA6<small>48K posts</small></li>
+        <li>Game awards nominees<small>21K posts</small></li>
+        <li>Vice City easter eggs<small>12K posts</small></li>
+        <li>Patch notes roundup<small>9K posts</small></li>
+        <li>Speedrun world record<small>4K posts</small></li>
+      </ol>
+    </aside>
+  </main>
+</body>
+</html>

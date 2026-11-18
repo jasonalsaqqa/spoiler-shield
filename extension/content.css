@@ -1,0 +1,14 @@
+[data-ssb="blur"] {
+  filter: blur(18px) saturate(0.3) !important;
+  clip-path: inset(0) !important;
+  cursor: pointer !important;
+  user-select: none !important;
+}
+/* Children ignore the mouse so hover previews and links never fire;
+   the click lands on the blurred container and reveals it. */
+[data-ssb="blur"] * {
+  pointer-events: none !important;
+}
+[data-ssb="hide"] {
+  display: none !important;
+}
